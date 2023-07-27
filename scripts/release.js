@@ -42,7 +42,7 @@ const newTagName = async () => {
     return `${oldTag[0]}.${minorTagNum}.0`;
   }
   if (RELEASE_FIX === 'true') {
-    const fixTagNum = parseInt(oldTag[1]) + 1;
+    const fixTagNum = parseInt(oldTag[2]) + 1;
     return `${oldTag[0]}.${oldTag[1]}.${fixTagNum}`;
   }
   if (DEVELOP === 'true') {
