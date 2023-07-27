@@ -12,7 +12,7 @@ Também é preciso copiar o arquivo `release.yml` e o path dele deve ser **exata
 
 Também é preciso configurar *secrets* para que seja possível o correto funcionamento. As secrets são:
 
-* API_TOKEN_GITHUB = Token gerado pelo github por 1 usuário
+* API_TOKEN_GITHUB = Token gerado pelo github por 1 usuário. Para gerar basta ir em `developer settings`, selecionar `personal access tokens` e gerar um novo token.
 
 * GIT_DOC_REPO = Nome do repositório de documentação, ex: 2023-1-Alectrion-DOC
 
@@ -35,3 +35,7 @@ As seguintes labels devem ser criadas para utilização nos Pull Requests:
 * FIX RELEASE : #cfd3d7
 
 * DEVELOP : #0075ca
+
+A label `NOT RELEASE` deve ser utilizada quando não é apropriada a geração de uma release e nem o envio das métricas do PR para o repositório de documentação.
+
+A label `DEVELOP` deve ser utilizada quando um PR é feito para a branch develop. Nesse caso é feito o envio das métricas para o repositório de documentação, porém não é gerada uma nova tag de release.
