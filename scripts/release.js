@@ -92,6 +92,10 @@ const uploadSonarFile = async (release) => {
 };
 
 const script = async () => {
+  if(DEVELOP === 'true') {
+    await saveSonarFile('develop');
+    return;
+  }
   const release = await createRelease();
   await uploadSonarFile(release);
 };
