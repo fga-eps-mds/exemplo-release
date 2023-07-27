@@ -24,6 +24,8 @@ Também é preciso configurar *secrets* para que seja possível o correto funcio
 
 ## Labels de Pull Requests
 
+As seguintes labels devem ser criadas para utilização nos Pull Requests:
+
 * NOT RELEASE : #d73a4a
 
 * MAJOR RELEASE : #11C955
